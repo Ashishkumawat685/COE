@@ -364,6 +364,7 @@ i.fa-solid.fa-headphones {
     border-radius: 20px;
     box-shadow: 0 0 15px 0 black;
     background-color: pink;
+    display: none;
 }
 
 
