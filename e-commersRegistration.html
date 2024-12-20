@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="e-commerceRegistration.css">
+</head>
+
+<body>
+    <div class="login_Page">
+        <div class="login_main">
+            <div class="Registration_form" id="Registration_form">
+                <h1>Create Account</h1>
+                <input id="Full_Name" type="text" placeholder="Full Name" required>
+                <p id="Name_alert"></p>
+
+                <input id="Email_Address" type="text" placeholder="Email Address" required>
+                <p id="Email_alert"></p>
+
+                <input id="Mobile_Number" type="text" placeholder="Mobile Number" required>
+                <p id="Number_alert"></p>
+
+                <input id="Password" type="password" placeholder="Password" required>
+                <p id="Password_alert"></p>
+
+                <input id="Cunfirm_Password" type="password" placeholder="Cunfirm Password" required>
+                <p id="Cunfirm_Password_alert"></p>
+
+
+                <div class="Register_button">
+                    <button onclick="Regi_data()" class="Register_btn"> <a href="#">Register</a>
+                    </button>
+                </div>
+                <div class="Register_login_button">
+                    <button class="Register_login_btn"><a href="e-commerslogin.html"><i
+                                class="fa-solid fa-right-to-bracket"></i>
+                            Login</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function Regi_data() {
+            const F_N = document.getElementById("Full_Name").value;
+            const E_A = document.getElementById("Email_Address").value;
+            const M_N = document.getElementById("Mobile_Number").value;
+            const P_D = document.getElementById("Password").value;
+            const C_P_D = document.getElementById("Cunfirm_Password").value;
+
+
+            const F_N_A = document.getElementById("Name_alert");
+            const E_A_A = document.getElementById("Email_alert");
+            const M_N_A = document.getElementById("Number_alert");
+            const P_D_A = document.getElementById("Password_alert");
+            const C_P_D_A = document.getElementById("Cunfirm_Password_alert");
+
+            if (F_N === "Ashish_Kumawat") {
+                F_N_A.innerHTML = "Full Name are correct";
+                F_N_A.style.color = "green";
+                F_N_A.style.marginTop = "5px";
+
+                if (E_A === "ashishkumawat685@gmail.com") {
+                    E_A_A.innerHTML = "Email Address are correct";
+                    E_A_A.style.color = "green";
+                    E_A_A.style.marginTop = "5px";
+
+                    if (M_N === "9785152556") {
+                        M_N_A.innerHTML = "Mobile Number are correct";
+                        M_N_A.style.color = "green";
+                        M_N_A.style.marginTop = "5px";
+
+                        if (P_D === "123456") {
+                            P_D_A.innerHTML = "Password are correct";
+                            P_D_A.style.color = "green";
+                            P_D_A.style.marginTop = "5px";
+
+                            if (C_P_D === "123456") {
+                                C_P_D_A.innerHTML = "Confirm Password are correct";
+                                C_P_D_A.style.color = "green";
+                                C_P_D_A.style.marginTop = "5px";
+                                window.location.href = "index.html"
+
+                            }
+                            else {
+                                C_P_D_A.innerHTML = "Confirm Password are not match";
+                                C_P_D_A.style.color = "red";
+                                C_P_D_A.style.marginTop = "5px";
+                            }
+
+                        }
+                        else {
+                            P_D_A.innerHTML = "Password are not match";
+                            P_D_A.style.color = "red";
+                            P_D_A.style.marginTop = "5px";
+                        }
+                    }
+                    else {
+                        M_N_A.innerHTML = "Mobile Number are not match";
+                        M_N_A.style.color = "red";
+                        M_N_A.style.marginTop = "5px";
+                    }
+                }
+                else {
+                    E_A_A.innerHTML = "Email Address are not match";
+                    E_A_A.style.color = "red";
+                    E_A_A.style.marginTop = "5px";
+                }
+            }
+            else {
+                F_N_A.innerHTML = "Full Name are not match";
+                F_N_A.style.color = "red";
+                F_N_A.style.marginTop = "5px";
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

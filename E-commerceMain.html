@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="E-commerceMain.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Signika+Negative:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body id="main_body">
+
+    <div class="Main_Page">
+        <div class="head_container">
+            <div class="header">
+                <div class="logo">
+                    <img src="1.coelogo.png" alt="coe">
+                </div>
+                <div class="selectbar">
+                    <select name="Products" id="Products">
+                        <option value="">Products</option>
+                        <option value=""> Men t-shirt</option>
+                        <option value="">Men Jeans</option>
+                        <option value="">Men Shirt</option>
+                        <option value="">Men Shoes</option>
+
+                        <option value="">Women t-shirt</option>
+                        <option value="">Women Jeans</option>
+                        <option value="">Women Shirt</option>
+                        <option value="">Womes Shoes</option>
+
+                        <option value="">Kids t-shirt</option>
+                        <option value="">Kids Jeans</option>
+                        <option value="">Kids Shirt</option>
+                        <option value="">Kids Shoes</option>
+                    </select>
+
+                    <input type="text" placeholder="Search for items.......">
+                    <a class="searchbtn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+
+                <div class="head_option">
+                    <div class="compare">
+                        <i class="fa-solid fa-code-compare"></i>
+                        <p>Compare</p>
+                    </div>
+                    <div class="wishlist">
+                        <i class="fa-solid fa-heart"></i>
+                        <p>Wishlist</p>
+                    </div>
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cart</p>
+                    </div>
+                    <div class="account">
+                        <i class="fa-solid fa-user"></i>
+                        <p>Account</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="show_menu">
+                <button id="show_me" class="show_m"><i onclick="responshivnav()" class="fa-solid fa-bars"></i></button>
+                <button id="hide_me" class="hide_m" style="display: none;"><i onclick="responshivnav()"
+                        class="fa-solid fa-xmark"></i></i></button>
+            </div>
+
+            <div class="header_menus" id="header_menu">
+                <div class="All_Category">
+                    <a id="btndata" onclick="Lout()" href="#">Logout</a>
+                </div>
+                <div class="menus">
+                    <a href="#">Home</a>
+                    <a href="#">About us</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Vendor</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Account</a>
+                </div>
+                <div class="Headphon">
+                    <a href="#"><i class="fa-solid fa-headphones"></i></a>
+                </div>
+                <div class="customer_support">
+                    <p class="customer_Numb">1988 - 899</p>
+                    <p>24/7 Customer Support</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ........................ swiper slider.............................. -->
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="1.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide"><img src="2.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide"><img src="3.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide"><img src="4.slider.jpg" alt="Offer"></div>
+            </div>
+
+        </div>
+
+        <!-- ........................... Featured Category ......................... -->
+
+        <section class="feature">
+            <div class="container">
+                <div class="Featured_category">
+                    <div class="Feature_heding">
+                        <h1>Featured Category</h1>
+                    </div>
+
+                    <div class="featured_items">
+                        <a href="#" onclick="All_Cloth()">All</a>
+                        <a href="#" onclick="Mens_Cloth()">Men's</a>
+                        <a href="#" onclick="Womens_Cloth()">Girls</a>
+                        <a href="#" onclick="Kids_Cloth()">Kids</a>
+                    </div>
+
+                    <div id="Mens_clothes">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1" onclick="mensJacket()">
+                                    <img src="https://m.media-amazon.com/images/I/51mkG6zQzXL._SY879_.jpg" alt="">
+                                    <p>Men's Jeans</p>
+                                    <span>18 items</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1">
+                                    <img src="https://m.media-amazon.com/images/I/61z5Lgyo8HL._AC_UL640_FMwebp_QL65_.jpg"
+                                        alt="">
+                                    <p>Men's Shirts</p>
+                                    <span>20 item</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1">
+                                    <img src="https://m.media-amazon.com/images/I/71i5s-FuonL._AC_UL640_FMwebp_QL65_.jpg"
+                                        alt="">
+                                    <p>Men's t-shirts</p>
+                                    <span>28 item</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1">
+                                    <img src="https://m.media-amazon.com/images/I/718BLHSz2nL._AC_UL640_FMwebp_QL65_.jpg"
+                                        alt="">
+                                    <p>Men's Lowers</p>
+                                    <span>28 item</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1">
+                                    <img src="https://m.media-amazon.com/images/I/81nSVIsGfQL._AC_UL640_FMwebp_QL65_.jpg"
+                                        alt="">
+                                    <p>Men's Shorts</p>
+                                    <span>28 item</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                <div class="box1">
+                                    <img src="https://m.media-amazon.com/images/I/91TlNak31rL._AC_UL640_FMwebp_QL65_.jpg"
+                                        alt="">
+                                    <p>Men's Jackets</p>
+                                    <span>28 item</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Womens_clothes">
+                            <div class="row">
+
+
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1" id="menJak">
+                                        <img src="https://m.media-amazon.com/images/I/71BJBSN76zL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Womes's Jeans</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/61-Tger3YQL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Womes's Kurta Kurti</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/51yqqiHcm2L._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Women's Jackets</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71gRPbLqQmL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Women's shirts</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71TFivXOPaL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Women's pants</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71l9JnOqS5L._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Women's lowers</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="Kids_clothes">
+                            <div class="row">
+
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/61lEf3dXXqL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Kids Jeans for boys</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/51w0hv2kKrL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Kids t-shirts for boys</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/61VjGoWycnL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Kids Jackets for boys</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/61r2+eKLP+L._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Kids Jeans for girls</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71hg1hZdaLL._AC_SY879_.jpg"
+                                            alt="">
+                                        <p>Kids t-shirts for girls</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71EmERf7iDL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Kids Jackets for girls</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="slider_onclik">
+                            <div class="swiper newSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide slider_main_content">
+                                        <div class="container">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </section>
+
+
+        <!-- ........................... 3 Images ......................... -->
+
+
+        <section class="other_product_theme">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-4 ">
+                    <div class="content_box1">
+                        <div class="theme_box1_img">
+                            <img class="img-fluid"
+                                src="https://your-daily-need.netlify.app/static/media/banner-1%20-%20Copy.5d00c06ebb057b287f6c.png"
+                                alt="">
+                        </div>
+                        <div class="theme_product_content">
+                            <h5>Everyday Fresh & Clean with Our Products</h5>
+                            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-4">
+                    <div class="content_box1">
+                        <div class="theme_box1_img">
+                            <img class="img-fluid"
+                                src="https://your-daily-need.netlify.app/static/media/banner-1%20-%20Copy.5d00c06ebb057b287f6c.png"
+                                alt="">
+                        </div>
+                        <div class="theme_product_content">
+                            <h5>Everyday Fresh & Clean with Our Products</h5>
+                            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-4">
+                    <div class="content_box1">
+                        <div class="theme_box1_img">
+                            <img class="img-fluid"
+                                src="https://your-daily-need.netlify.app/static/media/banner-1%20-%20Copy.5d00c06ebb057b287f6c.png"
+                                alt="">
+                        </div>
+                        <div class="theme_product_content">
+                            <h5>Everyday Fresh & Clean with Our Products</h5>
+                            <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- /* .................................. Popular Product ........................................ */ -->
+        <section class="popular_Product">
+            <div class="popular_content">
+                <div class="popular_heading">
+                    <h1>Popular products</h1>
+                </div>
+                <div class="popular_menu">
+                    <ul>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Milk & Dairies</a></li>
+                        <li><a href="#">Pet Foods</a></li>
+                        <li><a href="#">Meat</a></li>
+                        <li><a href="#">Vegetables</a></li>
+                        <li><a href="#">Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="popular_items">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-xl-3">
+
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="popular_item_box">
+                                <h5 class="Head_new">New</h5>
+                                <div class="item_box_img">
+                                    <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                        alt="">
+                                </div>
+                                <div class="item_box-text">
+                                    <h6>snack</h6>
+                                    <h4>Bandy Blandy</h4>
+
+                                    <div class="item_box-rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <span>(4.0)</span>
+                                        <h3>coe</h3>
+                                    </div>
+                                    <div class="item_box_price">
+                                        <div class="box_price">
+                                            <h1>$ 80</h1>
+                                            <h3>$50</h3>
+                                        </div>
+                                        <div class="Qty"><button class="increment-button">+</button>&nbsp;&nbsp;
+                                            1&nbsp;&nbsp;<button class="decrement-button">-</button></div>
+                                        <div class="addtocart_btn">
+                                            <button class="addcart-btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- ................................... Daily Best sells ...................................... -->
+        <section class="Daily_Best_sell">
+            <div class="Best_seller_main">
+                <div class="Best_seller_heading">
+                    <h1>Dailly Best Sells</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-4 col-xl-4">
+                        <div class="Best_Sell_content_box">
+                            <div class="sell_box1_img">
+                                <img class="img-fluid"
+                                    src="https://your-daily-need.netlify.app/static/media/banner-4.e4c8adbb80eb46aa2c91.png"
+                                    alt="">
+                            </div>
+                            <div class="Sell_product_content">
+                                <h2>Bring nature into your home</h2>
+                                <button>Shop Now <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-sm-4 col-xl-2">
+                        <div class="sell_item_box">
+                            <h5 class="sell_Head_new">New</h5>
+                            <div class="sell_item_box_img">
+                                <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="sell_item_box_text">
+                                <h6>snack</h6>
+                                <h4>Bandy Blandy</h4>
+
+                                <div class="sell_item_box_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.0)</span>
+                                    <h3>coe</h3>
+                                </div>
+                                <div class="sell_item_box_price">
+                                    <div class="sell_box_price">
+                                        <h1>$ 80</h1>
+                                        <h3>$ 50</h3>
+                                    </div>
+
+                                    <div class="sell_addtocart_btn">
+                                        <button class="sell_addtocart_btn">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-xl-2">
+                        <div class="sell_item_box">
+                            <h5 class="sell_Head_new">New</h5>
+                            <div class="sell_item_box_img">
+                                <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="sell_item_box_text">
+                                <h6>snack</h6>
+                                <h4>Bandy Blandy</h4>
+
+                                <div class="sell_item_box_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.0)</span>
+                                    <h3>coe</h3>
+                                </div>
+                                <div class="sell_item_box_price">
+                                    <div class="sell_box_price">
+                                        <h1>$ 80</h1>
+                                        <h3>$ 50</h3>
+                                    </div>
+
+                                    <div class="sell_addtocart_btn">
+                                        <button class="sell_addtocart_btn">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-xl-2">
+                        <div class="sell_item_box">
+                            <h5 class="sell_Head_new">New</h5>
+                            <div class="sell_item_box_img">
+                                <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="sell_item_box_text">
+                                <h6>snack</h6>
+                                <h4>Bandy Blandy</h4>
+
+                                <div class="sell_item_box_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.0)</span>
+                                    <h3>coe</h3>
+                                </div>
+                                <div class="sell_item_box_price">
+                                    <div class="sell_box_price">
+                                        <h1>$ 80</h1>
+                                        <h3>$ 50</h3>
+                                    </div>
+
+                                    <div class="sell_addtocart_btn">
+                                        <button class="sell_addtocart_btn">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-xl-2">
+                        <div class="sell_item_box">
+                            <h5 class="sell_Head_new">New</h5>
+                            <div class="sell_item_box_img">
+                                <img src="https://your-daily-need.netlify.app/static/media/product-1-1%20-%20Copy.b6014f69e378206a53e3.jpg"
+                                    alt="">
+                            </div>
+                            <div class="sell_item_box_text">
+                                <h6>snack</h6>
+                                <h4>Bandy Blandy</h4>
+
+                                <div class="sell_item_box_rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    <span>(4.0)</span>
+                                    <h3>coe</h3>
+                                </div>
+                                <div class="sell_item_box_price">
+                                    <div class="sell_box_price">
+                                        <h1>$ 80</h1>
+                                        <h3>$ 50</h3>
+                                    </div>
+
+                                    <div class="sell_addtocart_btn">
+                                        <button class="sell_addtocart_btn">Add To Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        function responshivnav() {
+            const res = document.getElementById("header_menu")
+            const show_icon = document.getElementById("show_me")
+            const hide_icon = document.getElementById("hide_me")
+
+            if (res.style.display === "flex") {
+                res.style.display = "none";
+                show_icon.style.display = "block"
+                hide_icon.style.display = "none"
+
+            }
+            else {
+                res.style.display = "flex";
+                show_icon.style.display = "none"
+                hide_icon.style.display = "block"
+            }
+        }
+    </script>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                loop: true,
+
+            },
+
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".newSwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+    <!-- clothes display -->
+    <script>
+        function All_Cloth() {
+            men = document.getElementById("Mens_clothes")
+            womens = document.getElementById("Womens_clothes")
+            kids = document.getElementById("Kids_clothes")
+
+            men.style.display = "block";
+            womens.style.display = "block";
+            kids.style.display = "block";
+
+
+        }
+
+        function Mens_Cloth() {
+            men = document.getElementById("Mens_clothes")
+            womens = document.getElementById("Womens_clothes")
+            kids = document.getElementById("Kids_clothes")
+
+            men.style.display = "block";
+            womens.style.display = "none";
+            kids.style.display = "none";
+
+
+        }
+
+        function Womens_Cloth() {
+            men = document.getElementById("Mens_clothes")
+            womens = document.getElementById("Womens_clothes")
+            kids = document.getElementById("Kids_clothes")
+
+            men.style.display = "none"
+            womens.style.display = "block";
+            kids.style.display = "none";
+
+
+        }
+
+        function Kids_Cloth() {
+            men = document.getElementById("Mens_clothes")
+            womens = document.getElementById("Womens_clothes")
+            kids = document.getElementById("Kids_clothes")
+
+            kids.style.display = "block";
+            men.style.display = "none"
+            womens.style.display = "none";
+
+
+        }
+
+
+
+        function mensJacket() {
+            window.location.href = "Men'sJeans.html"
+            // menJa.href = "Men'sJeans.html"
+        }
+
+
+
+
+    </script>
+
+    <script>
+        btdat = document.getElementById("btndata")
+        usdata = localStorage.getItem("User_Name")
+        mainbdydata = document.getElementById("main_body")
+
+
+        if (usdata) {
+            btdat.innerHTML = `${usdata} Logout..`
+        } else {
+            mainbdydata.style.display = "none"
+        }
+
+
+        function Lout() {
+            localStorage.removeItem("User_Name")
+            alert("logout Successfully.......")
+
+            setTimeout(() => {
+                window.location.href = "index.html"
+            }, 2000)
+        }
+    </script>
+
+
+</body>
+
+</html>

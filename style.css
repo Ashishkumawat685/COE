@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.background_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_Page {
+    position: relative;
+    background-image: url("e-coomercebg.jpg");
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.logincontent {
+    color: white;
+    margin-top: 25%;
+}
+
+.logincontent h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+    padding-left: 78px;
+}
+
+.logincontent .Dont_have {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffffa8;
+    margin-bottom: 20px;
+}
+
+.logincontent .Dont_have a {
+    font-size: 18px;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.Login_username {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.Login_username .usericon1 i {
+    margin: 0px 5px 0 15px;
+    color: #00000085;
+}
+
+input.userin {
+    border: none;
+    background: none;
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+span.usericon2 i {
+    color: green;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.login_Password {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.login_Password .usericon1 i {
+    margin: 0px 5px 0 15px;
+    color: #00000085;
+}
+
+.login_Password .passicon1 i {
+    margin: 0px 5px 0 15px;
+    color: #00000085;
+}
+
+input.passin {
+    border: none;
+    background: none;
+    width: 200px;
+    padding: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+span.passicon2 i {
+    color: #0000008a;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+span.passicon3 i {
+    color: #0000008a;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+.pass_for {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+
+
+
+.pass_for a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+
+.login_button {
+    display: flex;
+    justify-content: center;
+}
+
+.login_btn {
+    text-decoration: none;
+    width: 80%;
+    padding: 13px 0px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    margin: 12px 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: white;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+.login_btn:hover {
+    background: green;
+    color: white;
+}
+
+
+.login_with_icon p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: orange;
+
+}
+
+.login_with_icon a i {
+    font-size: 20px;
+    margin: 10px 3px;
+    padding: 5px 16px;
+    background: red;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.login_with_icon {
+    text-align: center;
+}

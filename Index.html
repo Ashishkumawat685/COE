@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login_Page">
+        <div class="background_img">
+            <!-- <img class="img-fluid" src="e-coomercebg.jpg" alt=""> -->
+
+            <div class="login_main">
+                <div id="logn_content" class="logincontent">
+                    <h1>Login</h1>
+                    <p class="Dont_have">Don't have an account? <a id="Create_Account"
+                            href="e-commersRegistration.html">Create Account</a></p>
+
+
+                    <!-- .................. Username.......................  -->
+
+
+                    <div class="Login_username">
+                        <span class="usericon1">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input id="User_Name" class="userin" type="text" placeholder="Enter Username" required>
+                        <p id="userin_alert"></p>
+
+
+                        <span class="usericon2">
+                            <i class="fa-regular fa-circle-check"></i>
+                        </span>
+                    </div>
+
+
+                    <!-- .................. Password.......................  -->
+
+
+                    <div class="login_Password">
+                        <span class="passicon1">
+                            <i class="fa-solid fa-lock"></i>
+                        </span>
+
+
+                        <input class="passin" id="passin" type="password" placeholder="Enter Password" required>
+                        <p id="Passin_alert"></p>
+
+
+
+                        <span id="show" onclick="passshowhide()" class="passicon2">
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+
+                        <span id="hide" onclick="passshowhide()" style="display: none;" class="passicon3">
+                            <i class="fa-regular fa-eye-slash"></i></span>
+                    </div>
+
+                    <div class="pass_for">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+
+                    <div class="login_button">
+                        <a class="login_btn" href="#" onclick="Logindata()"><i class="fa-solid fa-right-to-bracket"></i>
+                            Login</a>
+                    </div>
+                    <div class="login_with_icon">
+                        <p>Login With</p>
+
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function passshowhide() {
+            sho = document.getElementById("show");
+            hid = document.getElementById("hide");
+
+
+            psd = document.getElementById("passin");
+
+            currentType = psd.type;
+
+            if (currentType === "password") {
+                psd.type = "text";
+                sho.style.display = "none";
+                hid.style.display = "block";
+            } else {
+                psd.type = "password";
+                sho.style.display = "block";
+                hid.style.display = "none";
+            }
+        }
+
+        function Logindata() {
+            user_name_in = document.getElementById("User_Name").value
+            psd = document.getElementById("passin").value
+
+            if (user_name_in === "Ashish") {
+                if (psd === "9785") {
+                    alert("Login Successfully..........")
+                    localStorage.setItem("User_Name", user_name_in)
+                    setTimeout(() => {
+                        window.location.href = "E-commerceMain.html"
+                    }, 2000)
+                } else {
+                    alert("Password not match.......")
+                }
+            } else {
+                alert("User not found.......")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

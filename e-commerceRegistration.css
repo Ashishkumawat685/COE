@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login_Page {
+    background-image: url("e-coomercebg.jpg");
+    height: 100vh;
+    min-height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.login_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ........................... registration form ........................ */
+.Registration_form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 10%;
+
+
+}
+
+.Registration_form input {
+    margin-top: 10px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.346);
+}
+
+
+.Registration_form h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+    padding-left: 33px;
+}
+
+
+.Register_login_button,
+.Register_button {
+    display: flex;
+    justify-content: center;
+}
+
+button.Register_btn {
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 18px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 21px 0 0 0px;
+    cursor: pointer;
+    background: #ae361efc;
+    color: white;
+    border: none;
+    transition: 0.3s;
+
+}
+
+button.Register_btn a {
+    text-decoration: none;
+    color: black;
+}
+
+button.Register_btn:hover {
+    background-color: green;
+}
+
+button.Register_login_btn a {
+    text-decoration: none;
+    color: black;
+}
+
+button.Register_login_btn a:hover {
+    color: white;
+}
+
+button.Register_login_btn {
+    width: 80%;
+    padding: 10px 0px;
+    border-radius: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 12px 0px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+button.Register_login_btn:hover {
+    background: green;
+    color: white;
+}
