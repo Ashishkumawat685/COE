@@ -226,7 +226,7 @@ i.fa-solid.fa-headphones {
 
 }
 
-.swiper-slide img {
+.first-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -235,6 +235,52 @@ i.fa-solid.fa-headphones {
 }
 
 /* ...................................... Featured Catagory ...................... */
+
+
+.Mens_clothes {
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    background: white;
+    padding: 0px 10px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 15px 0 black;
+    border-radius: 20px;
+    /* display: none; */
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* bottom: 0; */
+    transition: 0.8s;
+    transform: translateY(-400px);
+}
+
+
+
+.search_bar_close_button1,
+.search_bar_close_button2,
+.search_bar_close_button3 {
+    position: absolute;
+    text-align: end;
+    margin: 10px;
+    right: -46px;
+    display: none;
+}
+
+.search_bar_close_button1 button,
+.search_bar_close_button2 button,
+.search_bar_close_button3 button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+
 .Featured_category h1 {
     text-align: center;
     position: relative;
@@ -354,7 +400,7 @@ i.fa-solid.fa-headphones {
 
 
 
-.slider_onclik {
+.men_slider_onclik {
     position: absolute;
     top: 180px;
     right: 0;
@@ -363,10 +409,89 @@ i.fa-solid.fa-headphones {
     height: 350px;
     border-radius: 20px;
     box-shadow: 0 0 15px 0 black;
-    background-color: pink;
+    background-color: white;
     display: none;
 }
 
+
+.slider_main_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.men_product_hover_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 5%; */
+    height: 350px;
+}
+
+.men_product_hover_img img {
+    width: 50px;
+    height: 55px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 3px solid white;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.men_product_hover_img img:hover {
+    border: 3px solid green;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.men_product_img {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 30%; */
+    height: 350px;
+}
+
+.men_product_img img {
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 0 black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.close_button {
+    width: 5%;
+    right: 0px;
+    position: absolute;
+    background: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.close_button button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
 
 /* < !-- ........................... 3 Images ......................... --> */
 

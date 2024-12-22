@@ -54,8 +54,9 @@
                         <option value="">Kids Shoes</option>
                     </select>
 
-                    <input type="text" placeholder="Search for items.......">
-                    <a class="searchbtn" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <input id="Main_search_bar" type="text" placeholder="Search for items.......">
+                    <a onclick="search_bar()" class="searchbtn" href="#"><i
+                            class="fa-solid fa-magnifying-glass"></i></a>
                 </div>
 
                 <div class="head_option">
@@ -113,10 +114,10 @@
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="1.slider.jpg" alt="Offer"></div>
-                <div class="swiper-slide"><img src="2.slider.jpg" alt="Offer"></div>
-                <div class="swiper-slide"><img src="3.slider.jpg" alt="Offer"></div>
-                <div class="swiper-slide"><img src="4.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide first-slide"><img src="1.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide first-slide"><img src="2.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide first-slide"><img src="3.slider.jpg" alt="Offer"></div>
+                <div class="swiper-slide first-slide"><img src="4.slider.jpg" alt="Offer"></div>
             </div>
 
         </div>
@@ -137,53 +138,59 @@
                         <a href="#" onclick="Kids_Cloth()">Kids</a>
                     </div>
 
-                    <div id="Mens_clothes">
-                        <div class="row">
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/51mkG6zQzXL._SY879_.jpg" alt="">
-                                    <p>Men's Jeans</p>
-                                    <span>18 items</span>
+                    <div id="Mens_clot">
+                        <div id="Mens_clothes">
+                            <div class="row">
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div onclick="slider_open_btn()" class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/51mkG6zQzXL._SY879_.jpg" alt="">
+                                        <p>Men's Jeans</p>
+                                        <span>18 items</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/61z5Lgyo8HL._AC_UL640_FMwebp_QL65_.jpg"
-                                        alt="">
-                                    <p>Men's Shirts</p>
-                                    <span>20 item</span>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/61z5Lgyo8HL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Men's Shirts</p>
+                                        <span>20 item</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/71i5s-FuonL._AC_UL640_FMwebp_QL65_.jpg"
-                                        alt="">
-                                    <p>Men's t-shirts</p>
-                                    <span>28 item</span>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/71i5s-FuonL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Men's t-shirts</p>
+                                        <span>28 item</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/718BLHSz2nL._AC_UL640_FMwebp_QL65_.jpg"
-                                        alt="">
-                                    <p>Men's Lowers</p>
-                                    <span>28 item</span>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/718BLHSz2nL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Men's Lowers</p>
+                                        <span>28 item</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/81nSVIsGfQL._AC_UL640_FMwebp_QL65_.jpg"
-                                        alt="">
-                                    <p>Men's Shorts</p>
-                                    <span>28 item</span>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/81nSVIsGfQL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Men's Shorts</p>
+                                        <span>28 item</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
-                                <div class="box1">
-                                    <img src="https://m.media-amazon.com/images/I/91TlNak31rL._AC_UL640_FMwebp_QL65_.jpg"
-                                        alt="">
-                                    <p>Men's Jackets</p>
-                                    <span>28 item</span>
+                                <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                                    <div class="box1">
+                                        <img src="https://m.media-amazon.com/images/I/91TlNak31rL._AC_UL640_FMwebp_QL65_.jpg"
+                                            alt="">
+                                        <p>Men's Jackets</p>
+                                        <span>28 item</span>
+                                    </div>
+                                </div>
+                                <div class="search_bar_close_button1" id="search_bar_close_butto1">
+                                    <button onclick="search_bar_close1()" id="search_bar_close_btn"><i
+                                            class="fa-solid fa-x "></i></button>
                                 </div>
                             </div>
                         </div>
@@ -240,6 +247,10 @@
                                         <span>28 item</span>
                                     </div>
                                 </div>
+                                <div class="search_bar_close_button2" id="search_bar_close_butto2">
+                                    <button onclick="search_bar_close2()" id="search_bar_close_btn"><i
+                                            class="fa-solid fa-x "></i></button>
+                                </div>
                             </div>
                         </div>
 
@@ -295,14 +306,54 @@
                                     </div>
                                 </div>
 
+                                <div class="search_bar_close_button3" id="search_bar_close_butto3">
+                                    <button onclick="search_bar_close3()" id="search_bar_close_btn"><i
+                                            class="fa-solid fa-x "></i></button>
+                                </div>
+
                             </div>
+
                         </div>
-                        <div class="slider_onclik">
+                        <div class="men_slider_onclik" id="Feture_Product_1_slider">
                             <div class="swiper newSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide slider_main_content">
                                         <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 col-lg-4">
+                                                    <div class="slider_main_content">
+                                                        <div class="men_product_hover_img">
+                                                            <img onmouseover="Slider_Product_1_img_1()"
+                                                                src="https://m.media-amazon.com/images/I/71aQwPEBQXL._AC_SY879_.jpg"
+                                                                alt="">
+                                                            <img onmouseover="Slider_Product_1_img_2()"
+                                                                src="https://m.media-amazon.com/images/I/81IwjwnrlrL._AC_SY879_.jpg"
+                                                                alt="">
+                                                            <img onmouseover="Slider_Product_1_img_3()"
+                                                                src="https://m.media-amazon.com/images/I/71R0j-LpxgL._AC_SY879_.jpg"
+                                                                alt="">
+                                                            <img onmouseover="Slider_Product_1_img_4()"
+                                                                src="https://m.media-amazon.com/images/I/81S4gqc3x8L._AC_SY879_.jpg"
+                                                                alt="">
+                                                            <img onmouseover="Slider_Product_1_img_5()"
+                                                                src="https://m.media-amazon.com/images/I/71hhUBx14ZL._AC_SY879_.jpg"
+                                                                alt="">
+                                                        </div>
+                                                        <div class="men_product_img">
+                                                            <img id="P_1"
+                                                                src="https://m.media-amazon.com/images/I/71aQwPEBQXL._AC_SY879_.jpg"
+                                                                alt="">
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="close_button">
+                                                        <button onclick="slider_cls_btn()" id="slider_close_btn"><i
+                                                                class="fa-solid fa-x "></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="swiper-button-next"></div>
@@ -837,143 +888,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
-
-    <script>
-        function responshivnav() {
-            const res = document.getElementById("header_menu")
-            const show_icon = document.getElementById("show_me")
-            const hide_icon = document.getElementById("hide_me")
-
-            if (res.style.display === "flex") {
-                res.style.display = "none";
-                show_icon.style.display = "block"
-                hide_icon.style.display = "none"
-
-            }
-            else {
-                res.style.display = "flex";
-                show_icon.style.display = "none"
-                hide_icon.style.display = "block"
-            }
-        }
-    </script>
-
-
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-                loop: true,
 
-            },
-
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".newSwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
-
-    <!-- clothes display -->
-    <script>
-        function All_Cloth() {
-            men = document.getElementById("Mens_clothes")
-            womens = document.getElementById("Womens_clothes")
-            kids = document.getElementById("Kids_clothes")
-
-            men.style.display = "block";
-            womens.style.display = "block";
-            kids.style.display = "block";
-
-
-        }
-
-        function Mens_Cloth() {
-            men = document.getElementById("Mens_clothes")
-            womens = document.getElementById("Womens_clothes")
-            kids = document.getElementById("Kids_clothes")
-
-            men.style.display = "block";
-            womens.style.display = "none";
-            kids.style.display = "none";
-
-
-        }
-
-        function Womens_Cloth() {
-            men = document.getElementById("Mens_clothes")
-            womens = document.getElementById("Womens_clothes")
-            kids = document.getElementById("Kids_clothes")
-
-            men.style.display = "none"
-            womens.style.display = "block";
-            kids.style.display = "none";
-
-
-        }
-
-        function Kids_Cloth() {
-            men = document.getElementById("Mens_clothes")
-            womens = document.getElementById("Womens_clothes")
-            kids = document.getElementById("Kids_clothes")
-
-            kids.style.display = "block";
-            men.style.display = "none"
-            womens.style.display = "none";
-
-
-        }
-
-
-
-
-
-
-    </script>
-
-    <script>
-        btdat = document.getElementById("btndata")
-        usdata = localStorage.getItem("User_Name")
-        mainbdydata = document.getElementById("main_body")
-
-
-        if (usdata) {
-            btdat.innerHTML = `${usdata} Logout..`
-        } else {
-            mainbdydata.style.display = "none"
-        }
-
-
-        function Lout() {
-            localStorage.removeItem("User_Name")
-            alert("logout Successfully.......")
-
-            setTimeout(() => {
-                window.location.href = "index.html"
-            }, 2000)
-        }
-    </script>
+    <script src="main.js"></script>
 
 
 </body>
