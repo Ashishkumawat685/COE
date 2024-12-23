@@ -1,3 +1,25 @@
+// ..................................... logout and local host .....................................
+
+btdat = document.getElementById("btndata");
+mainbdydata = document.getElementById("main_body");
+
+usdata = localStorage.getItem("User_N");
+
+if (usdata) {
+  btdat.innerHTML = `${usdata} Logout..`;
+} else {
+  mainbdydata.style.display = "none";
+}
+
+function Lout() {
+  localStorage.removeItem("User_N");
+  alert("logout Successfully.......");
+
+  setTimeout(() => {
+    window.location.href = "index.html";
+  }, 2000);
+}
+
 // ............................ header Responshiv .................................
 
 function responshivnav() {
@@ -138,25 +160,6 @@ function Kids_Cloth() {
   kids.style.display = "block";
   men.style.display = "none";
   womens.style.display = "none";
-}
-
-btdat = document.getElementById("btndata");
-usdata = localStorage.getItem("User_Name");
-mainbdydata = document.getElementById("main_body");
-
-if (usdata) {
-  btdat.innerHTML = `${usdata} Logout..`;
-} else {
-  mainbdydata.style.display = "none";
-}
-
-function Lout() {
-  localStorage.removeItem("User_Name");
-  alert("logout Successfully.......");
-
-  setTimeout(() => {
-    window.location.href = "index.html";
-  }, 2000);
 }
 
 // <!-- ...................... slider close button....................... -->

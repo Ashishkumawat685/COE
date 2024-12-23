@@ -1106,6 +1106,50 @@ button.sell_addtocart_btn {
         font-size: 10px;
     }
 
+
+
+
+
+
+    /* .............................. search bar products css ..............................  */
+
+
+    .search_bar_close_button1,
+    .search_bar_close_button2,
+    .search_bar_close_button3 {
+        position: absolute;
+        text-align: end;
+        margin: 0px;
+        right: -8px;
+        display: none;
+        top: -34px;
+    }
+
+    .search_bar_close_button1 button,
+    .search_bar_close_button2 button,
+    .search_bar_close_button3 button {
+        background: none;
+
+    }
+
+
+    .Mens_clothes {
+        top: 0px;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        padding: 0px 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 15px 0 black;
+        border-radius: 20px;
+        /* display: none; */
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* bottom: 0; */
+        transition: 0.8s;
+        transform: translateY(0px);
+    }
 }
 
 @media (min-width:576px) and (max-width:991px) {
@@ -1287,7 +1331,51 @@ button.sell_addtocart_btn {
         font-size: 13px;
     }
 
+
+
+
+
+    /* .............................. search bar products css ..............................  */
+
+
+    .search_bar_close_button1,
+    .search_bar_close_button2,
+    .search_bar_close_button3 {
+        position: absolute;
+        text-align: end;
+        margin: 0px;
+        right: -8px;
+        display: none;
+        top: -34px;
+    }
+
+    .search_bar_close_button1 button,
+    .search_bar_close_button2 button,
+    .search_bar_close_button3 button {
+        background: none;
+
+    }
+
+
+    .Mens_clothes {
+        top: 0px;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        padding: 0px 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 15px 0 black;
+        border-radius: 20px;
+        /* display: none; */
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* bottom: 0; */
+        transition: 0.8s;
+        transform: translateY(0px);
+    }
 }
+
 
 @media (min-width:992px) and (max-width:1200px) {
     .selectbar {
@@ -1364,5 +1452,45 @@ button.sell_addtocart_btn {
     i.fa-solid.fa-headphones {
         font-size: 37px;
         margin: 0 70% 0 70%;
+    }
+
+    /* .............................. search bar products css ..............................  */
+
+
+    .search_bar_close_button1,
+    .search_bar_close_button2,
+    .search_bar_close_button3 {
+        position: absolute;
+        text-align: end;
+        margin: 0px;
+        right: -8px;
+        display: none;
+        top: -34px;
+    }
+
+    .search_bar_close_button1 button,
+    .search_bar_close_button2 button,
+    .search_bar_close_button3 button {
+        background: none;
+
+    }
+
+
+    .Mens_clothes {
+        top: 0px;
+        position: absolute;
+        z-index: 1;
+        background: white;
+        padding: 0px 10px;
+        padding-bottom: 20px;
+        box-shadow: 0 0 15px 0 black;
+        border-radius: 20px;
+        /* display: none; */
+        left: 0;
+        right: 0;
+        margin: auto;
+        /* bottom: 0; */
+        transition: 0.8s;
+        transform: translateY(0px);
     }
 }
